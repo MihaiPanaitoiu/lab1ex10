@@ -16,7 +16,7 @@ namespace lab1ex10
             Console.WriteLine("num = ");
             string num = Console.ReadLine();
 
-            int result = num.Sum(p => int.Parse(p.ToString()));
+            int result = num.Sum(p => p - '0');
 
             Console.WriteLine($"Suma cifrelor {num} este {result}");
         }
